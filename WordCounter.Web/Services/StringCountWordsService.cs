@@ -8,6 +8,8 @@ namespace WordCounter.Web.Services
     {
         public Dictionary<int, int> CountOccurrencesOfWordLengthInString(string stringInput)
         {
+            if (stringInput == null) throw new ArgumentNullException(nameof(stringInput));
+            
             Dictionary<int, int> countedWords = new Dictionary<int, int>();
 
             string[] words = stringInput.Split(' ', StringSplitOptions.RemoveEmptyEntries);
