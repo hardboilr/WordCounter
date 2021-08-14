@@ -8,11 +8,11 @@ namespace WordCounter.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class StringCountWords : ControllerBase
+    public class StringCountWordsController : ControllerBase
     {
         private readonly IStringCountWordsService _wordsCountService;
 
-        public StringCountWords(IStringCountWordsService wordsCountService)
+        public StringCountWordsController(IStringCountWordsService wordsCountService)
         {
             _wordsCountService = wordsCountService;
         }
