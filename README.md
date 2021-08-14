@@ -1,0 +1,4 @@
+# WordCounter
+
+## Endpoints
+
