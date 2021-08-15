@@ -1,5 +1,7 @@
 # WordCounter
 
+Experimenting with .NET Web API and Github Devops
+
 ## Endpoints
 
 ### POST /Wordcount
