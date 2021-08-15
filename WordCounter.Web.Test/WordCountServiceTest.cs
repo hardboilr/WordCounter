@@ -41,5 +41,11 @@ namespace WordCounter.Web.Test
         {
             Dictionary<int, int> res = _stringCountWordsService.CountOccurrencesOfWordLengthInString(null);
         }
+
+        [TestMethod]
+        public void TestDelete()
+        {
+            Dictionary<int, int> res = _stringCountWordsService.CountOccurrencesOfWordLengthInString(null);
+        }
     }
 }
