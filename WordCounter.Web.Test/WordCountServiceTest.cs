@@ -6,13 +6,13 @@ using WordCounter.Web.Services;
 namespace WordCounter.Web.Test
 {
     [TestClass]
-    public class TestStringCountWordsService
+    public class WordCountServiceTest
     {
-        private readonly StringCountWordsService _stringCountWordsService;
+        private readonly WordCountService _stringCountWordsService;
 
-        public TestStringCountWordsService()
+        public WordCountServiceTest()
         {
-            _stringCountWordsService = new StringCountWordsService();
+            _stringCountWordsService = new WordCountService();
         }
 
         [TestMethod]

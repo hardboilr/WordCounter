@@ -4,7 +4,7 @@ using WordCounter.Web.Interfaces;
 
 namespace WordCounter.Web.Services
 {
-    public class StringCountWordsService : IStringCountWordsService
+    public class WordCountService : IWordCountService
     {
         public Dictionary<int, int> CountOccurrencesOfWordLengthInString(string stringInput)
         {

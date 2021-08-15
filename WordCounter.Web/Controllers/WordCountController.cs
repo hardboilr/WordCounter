@@ -8,17 +8,17 @@ namespace WordCounter.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class StringCountWordsController : ControllerBase
+    public class WordCountController : ControllerBase
     {
-        private readonly IStringCountWordsService _wordsCountService;
+        private readonly IWordCountService _wordsCountService;
 
-        public StringCountWordsController(IStringCountWordsService wordsCountService)
+        public WordCountController(IWordCountService wordsCountService)
         {
             _wordsCountService = wordsCountService;
         }
 
         [HttpPost]
-        public Dictionary<int, int> StringWordsCount(StringCountWordsRequest req)
+        public Dictionary<int, int> StringWordsCount(WordCountRequest req)
         {
             return _wordsCountService.CountOccurrencesOfWordLengthInString(req.StringInput)
                 .OrderBy(x => x.Key)

@@ -6,4 +6,8 @@
     <RootNamespace>Cylindo.BackendTest.Web</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

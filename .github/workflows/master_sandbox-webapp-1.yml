@@ -35,6 +35,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: sandbox-webapp-1
-          slot-name: Production
+          slot-name: staging
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F5D0B89ACF634D0280A1C73CF038AED7 }}
           package: ${{env.DOTNET_ROOT}}/myapp

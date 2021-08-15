@@ -20,7 +20,7 @@ namespace WordCounter.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IStringCountWordsService, StringCountWordsService>();
+            services.AddSingleton<IWordCountService, WordCountService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -33,6 +33,10 @@ namespace WordCounter.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseDefaultFiles();
+
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

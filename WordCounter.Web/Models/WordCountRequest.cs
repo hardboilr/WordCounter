@@ -2,7 +2,7 @@
 
 namespace WordCounter.Web.Models
 {
-    public class StringCountWordsRequest
+    public class WordCountRequest
     {
         [Required]
         public string StringInput { get; set; }
